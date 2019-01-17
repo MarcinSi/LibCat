@@ -45,9 +45,9 @@ public class User {
     @Column
     @NotBlank
     private String city;
-
-    @Column
+    
     @NotBlank
+    @Column(columnDefinition = "TEXT")
     private String password;
 
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)

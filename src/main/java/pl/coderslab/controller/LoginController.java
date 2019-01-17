@@ -32,7 +32,7 @@ public class LoginController {
             return "/login";
         }
         session.setAttribute("user", user);
-        return "redirect:portfolio";
+        return "redirect:user";
     }
 
     @GetMapping("/signout")
